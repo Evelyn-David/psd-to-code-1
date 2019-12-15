@@ -1,0 +1,369 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*==================================
+        LOGO + MENU
+====================================*/
+
+#navigation{
+    height: 60px;
+}
+
+#logo{
+    margin: 20px;
+}
+
+#logo p{
+    font-size: 36px;
+    letter-spacing: -1px;
+    line-height: 36px;
+    color: #404040;
+    font-family: "Raleway";
+    font-weight: 800;
+    float: left;
+}
+
+#logo #sms{
+    font-weight: 300;
+    color: #b32e54;
+}
+
+#menu .wrapper{
+    margin: 10px 30px 10px 0;
+    float: right;
+}
+
+#menu a{
+    font-size: 16px;
+    color: #404040;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+#menu span a{
+    background-color: #7f1a38;
+    color: #ffffff;
+    border-radius: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    transition: .2s ease-in;
+    -webkit-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+}
+
+#menu span a:hover{
+    text-decoration: none;
+    color: #7f1a38;
+    background-color: #ffffff;
+    transition: .2s ease-in;
+    -webkit-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+    border: 2px solid #7f1a38;
+}
+
+/*==================================
+        Header
+====================================*/
+header{
+    background: linear-gradient(to bottom, #f2865f 0%, #c9392a 117%);
+}
+
+#hero h1{
+    font-size: 60px;
+    /* color: #ffffff; */
+    font-family: "Raleway";
+    font-weight: 275;
+    text-align: center;
+    padding-top: 130px;
+    /* padding-bottom: 20px; */
+}
+
+#hero h2{
+    font-size: 18px;
+    /* color: #ffffff; */
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+#hero h3{
+    font-size: 12px;
+    /* color: #ffffff; */
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+
+}
+
+#hero form{
+    /* height: 45px; */
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#hero form input{
+    padding: 0 5px !important;
+}
+
+#hero form input[type=text]{
+    height: 45px;
+    font-size: 20px;
+    /* color: #ffffff; */
+    font-family: "Open Sans";
+    font-weight: 400;
+    width: 35%;
+    /* padding-left: 15px; */
+}
+
+#hero form input[type=submit]{
+    background-color: #ae2c52;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    height: 45px;
+    border: none;
+    width: 28%;
+    font-size: 20px;
+}
+
+
+/*==================================
+        Why us
+====================================*/
+
+#why{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+#why img{
+    opacity: .7;
+}
+
+#why img:hover{
+    opacity: 1;
+}
+
+#why h1{
+    font-size: 24px;
+    color: #141414;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+#why p{
+    font-size: 14px;
+    line-height: 21px;
+    color: #444444;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+/*==================================
+        Call to action
+====================================*/
+
+#cta{
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #f9f9f9;
+}
+
+#cta .container h1{
+    font-size: 48px;
+    color: #404040;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#cta p{
+    font-size: 15px;
+    line-height: 24px;
+    color: #404040;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    padding-bottom: 40px;
+}
+
+#cta .cta-btn a{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #7f1a38;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px #7f1a38 solid;
+    padding: 15px;
+    border-radius: 20px;
+    transition: .2s ease-in;
+    -webkit-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+}
+
+#cta .cta-btn a:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #7f1a38;
+    -webkit-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+    transition: .2s ease-in;
+}
+
+/*==================================
+        Call to state
+====================================*/
+
+#cts {
+    background-color: #32383d;
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#cts h1{
+    font-size: 32px;
+    color: #fafafa;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    padding-left: 100px;
+    padding-right: 100px;
+    /* float: left; */
+}
+
+#cts .cts-btn{
+    padding-top: 7px;
+}
+
+#cts .cts-btn a{
+    /* float: right; */
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px #ffffff solid;
+    padding: 15px;
+    border-radius: 23px;
+    transition: .2s ease-in;
+    -webkit-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+}
+
+#cts .cts-btn a:hover{
+    color: #32383d;
+    background-color: #ffffff;
+    text-decoration: none;
+    transition: .3s ease-in;
+    -webkit-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+}
+
+/*==================================
+        Social media quotes
+====================================*/
+
+#social {
+    background-color: #09bbdb;
+    text-align: center;
+}
+
+#social i{
+    font-size: 32px;
+    color: #117486;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#social .quote{
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300 !important;
+    font-style: italic;
+    text-align: center;
+}
+
+#social .quote span{
+    color: #117486;
+}
+
+#social .container{
+    padding-bottom: 50px;
+}
+
+/*==================================
+        Footer
+====================================*/
+footer p{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+}

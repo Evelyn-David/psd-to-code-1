@@ -1,0 +1,108 @@
+@media screen and (max-width: 1201px){
+    #cts .container{
+        display: block;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    #cts .container div{
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+
+/*==================================
+        1000
+====================================*/
+@media screen and (max-width: 1000px){
+
+    /* navigation -----------------------*/
+    #navigation{
+        height: 140px;
+        text-align: center;
+    }
+
+    
+    #flexy{
+        display: flex;
+        height: 80px;
+    }
+
+    #flexy #logo{
+        margin: auto;
+    }
+
+    #menu{
+        text-align: center;
+    }
+
+    #menu .wrapper{
+        /* padding-top: 60px; */
+        display: block;
+        float: none;
+    }
+
+    
+    /* form -----------------------*/
+
+    #hero form input[type=text]{
+        margin-bottom: 10px;
+    }
+
+    #hero form input[type=text],
+    #hero form input[type=submit]{
+        width: 100%;
+    }
+}
+
+/*==================================
+        768
+====================================*/
+
+@media screen and (max-width: 768px){
+
+    /* navigation -----------------------*/
+
+    #navigation{
+        height: 370px;
+        text-align: center;
+        background-color: #7f1a38;
+    }
+
+    #logo .logo-text, #logo #sms{
+        color: white;
+    }
+
+    #menu{
+        color: rgb(255, 255, 255);
+    }
+
+    #menu .wrapper{
+        margin: auto;
+    }
+
+    #menu .wrapper a{
+        display: block;
+        color: rgb(255, 255, 255);
+        float: none;
+        transition: .2s ease-in;
+        -webkit-transition: .2s ease-in;
+        -o-transition: .2s ease-in;
+    }
+
+    #menu .wrapper a:hover{   
+        color: #7f1a38;
+        background-color: #ffffff;
+        transition: .2s ease-in;
+        -webkit-transition: .2s ease-in;
+        -o-transition: .2s ease-in;
+    }
+
+
+    /* header -----------------------*/
+    #hero h1{
+        font-size: 40px;
+    }
+
+}
