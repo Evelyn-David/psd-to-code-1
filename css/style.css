@@ -1,369 +1,611 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* ================================================
+    General 
+   ================================================ */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+.bottom-border-divider{
+    border-bottom: 1px solid #dcdcdc;
 }
 
-/*==================================
-        LOGO + MENU
-====================================*/
-
-#navigation{
-    height: 60px;
-}
-
-#logo{
-    margin: 20px;
-}
-
-#logo p{
-    font-size: 36px;
-    letter-spacing: -1px;
+.text-title{
+    font-size: 32px;
     line-height: 36px;
-    color: #404040;
-    font-family: "Raleway";
-    font-weight: 800;
+    color: #333333;
+    font-family: "Quicksand";
+    font-weight: 500;
+}
+
+.text-paragraph{
+    font-size: 16px;
+    line-height: 27px;
+    color: #929292;
+    font-family: "Quicksand";
+    font-weight: 400;
+}
+
+.text-btn{
+    font-size: 16px;
+    line-height: 27px;
+    color: #ffffff;
+    font-family: "Quicksand";
+    font-weight: 700;
+    text-align: center;
+}
+
+/* ================================================
+    LOGO + NAVIGATION 
+   ================================================ */
+
+/* header --------------------------- */
+
+header{
+    background-color: #f5fcfd;
+    width: 100%;
+    height: 100px;
+}
+
+#header #logo{
+    float: left;
+    padding-top: 35px;
+}
+
+#header #logo h1:hover{
+    color: black;
+}
+
+#header #logo h1{
+    font-size: 36px;
+    line-height: 24px;
+    color: #0f7bff;
+    font-family: "Quicksand";
+    font-weight: 700;
+    padding-left: 140px;
+}
+
+#header #menu{
+    float: right;
+    padding-top: 35px;
+    padding-right: 140px;
+}
+
+#header #menu a{
+    font-size: 16px;
+    line-height: 27px;
+    color: #929292;
+    font-family: "Quicksand";
+    font-weight: 500;
+    padding-right: 30px;
+}
+
+#header #menu a:hover{
+    color: #0f7bff;
+    text-decoration: none;
+
+}
+
+#header #menu .sign-up{
+    text-transform: uppercase;
+    padding: 10px 30px 10px 30px;
+    border: 2px solid #0f7bff;
+    border-radius: 30px;
+    background-color: #0f7bff;
+    color: #ffffff;
+}
+
+#header #menu .sign-up:hover{
+    background-color: #ffffff;
+    color: #0f7bff;
+}
+
+/* ================================================
+    sign up page style 
+   ================================================ */
+
+#sign-up{
+    text-align: center;
+    padding: 120px 0px;
+}
+
+#sign-up-header h1{
+    padding-bottom: 20px;
+}
+
+/* social media ---------------------- */
+#sign-up #social-media{
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: 45% 45%;
+    padding-top: 40px;
+}
+
+#sign-up #social-media h1,
+#sign-up #social-media a{
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+
+
+#sign-up #social-media .fb{
+    background-color: #3b5999;
+    color: white;
+}
+
+#sign-up #social-media .tw{
+    background-color: #55acee;
+}
+
+#sign-up #social-media .fb:hover{
+    background-color: #ffffff;
+    color: #3b5999;
+    border: 2px #3b5999 solid;
+}
+
+#sign-up #social-media .tw:hover{
+    color: #55acee;
+    background-color: #ffffff;
+    border: 2px #55acee solid;
+}
+
+/* divider ---------------------- */
+#sign-up #divider{
+    font-size: 16px;
+    line-height: 27px;
+    color: #333333;
+    font-family: "Quicksand";
+    font-weight: 400;
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* formular --------------------- */
+#sign-up form .f-container{
+    display: grid;
+    grid-row-gap: 30px;
+    grid-template-columns: 100%;
+}
+
+#sign-up input[type="text"]{  
+    padding: 20px;
+    font-size: 16px;
+    line-height: 27px;
+    color: #929292;
+    font-family: "Quicksand";
+    font-weight: 400;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+}
+
+#sign-up form .already{
+    padding-bottom: 10px;
+}
+
+#sign-up input[type="submit"]{  
+    font-size: 16px;
+    line-height: 27px;
+    color: #ffffff;
+    font-family: "Quicksand";
+    font-weight: 700;
+    text-align: center;
+    background-color: #0f7bff;
+    border: 2px solid #0f7bff;
+    border-radius: 30px;
+    padding: 10px 50px 10px 50px;
+}
+
+/* ================================================
+    contact page style 
+   ================================================ */
+
+/* contact --------------------------- */
+
+#contact{
+    height: 400px;
+    background-color: #f5fcfd;
+}
+
+#contact #contact-title{
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 130px;
+}
+
+#contact-title h1,
+#contact-title p
+{
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+#contact-title p{
+    font-size: 18px;
+    line-height: 27px;
+    color: #333333;
+    font-family: "Quicksand";
+    font-weight: 500;
+}
+
+#contact-title h1{
+    font-size: 42px;
+    line-height: 24px;
+    color: #333333;
+    font-family: "Quicksand";
+    font-weight: 700;
+}
+
+
+#contact #contact-image{
+    float: right;
+    padding-top: 50px;
+
+}
+
+/* grid --------------------------- */
+
+#features .grid-container {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: 33% 33% 33%;
+    
+  }
+
+#features .feat{
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    margin: 130px 0;
+}
+
+#features .feat img{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#features .feat h1{
+    font-size: 18px;
+    line-height: 27px;
+    color: #0f7bff;
+    font-family: "Quicksand";
+    font-weight: 500;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+#features .feat p{
+    font-size: 16px;
+    line-height: 27px;
+    color: #929292;
+    font-family: "Quicksand";
+    font-weight: 400;
+    margin: 0;
+
+}
+
+#features .feat .last{
+    padding-bottom: 30px;
+}
+
+
+/* formular --------------------------- */
+
+#formular{
+    margin-bottom: 120px;
+}
+
+#formular .f-container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 50% 50%;
+}
+
+
+#formular h1{
+    text-align: center;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333333;
+    font-family: "Quicksand";
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#formular textarea{
+    padding: 20px;
+    font-size: 16px;
+    line-height: 27px;
+    color: #929292;
+    font-family: "Quicksand";
+    font-weight: 400;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    width: 100%;
+    height: 160px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#formular input[type="text"]{  
+    padding: 20px;
+    font-size: 16px;
+    line-height: 27px;
+    color: #929292;
+    font-family: "Quicksand";
+    font-weight: 400;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+}
+
+#formular input[type="submit"]{  
+    font-size: 16px;
+    line-height: 27px;
+    color: #ffffff;
+    font-family: "Quicksand";
+    font-weight: 700;
+    text-align: center;
+    background-color: #0f7bff;
+    border: 2px solid #0f7bff;
+    border-radius: 30px;
+    padding: 10px 50px 10px 50px;
+}
+
+/* ================================================
+    Thanks-page style 
+   ================================================ */
+
+#thanks{
+    padding-bottom: 130px;
+    text-align: center;
+}
+
+#thanks .thanks-img{
+    padding-top: 120px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+#thanks .thanks-text h1{
+    font-size: 32px;
+    line-height: 36px;
+    color: #333333;
+    font-family: "Quicksand";
+    font-weight: 500;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#thanks .thanks-text p{
+    /* width: 750px;
+    height: 44px; */
+    font-size: 16px;
+    line-height: 27px;
+    color: #929292;
+    font-family: "Quicksand";
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#thanks .thanks-text a{
+    font-size: 16px;
+    line-height: 27px;
+    color: #ffffff;
+    font-family: "Quicksand";
+    font-weight: 700;
+    background-color: #0f7bff;
+    padding: 30px 60px;
+    border-radius: 5px;
+}
+
+#thanks .thanks-text a img{
+    margin-left: 5px;
+}
+
+#thanks .thanks-text a:hover{
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #0f7bff;
+}
+
+#thanks .thanks-text a img:hover{
+    color: #0f7bff;
+}
+
+
+/* ================================================
+    Bottom side of the site 
+   ================================================ */
+
+/* app-bot --------------------------- */
+#app-bot{
+    padding: 120px 0px;
+    background-color: #f5fcfd;
+
+}
+
+#app-bot .col-md-6 h1{
+    font-size: 36px;
+    line-height: 24px;
+    color: #0f7bff;
+    font-family: "Quicksand";
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+#app-bot .col-md-6 p{
+    font-size: 16px;
+    line-height: 27px;
+    color: #929292;
+    font-family: "Quicksand";
+    font-weight: 400;
+    width: 85%;
+}
+
+#app-bot .col-md-2 h1{
+    font-size: 18px;
+    line-height: 27px;
+    color: #333333;
+    font-family: "Quicksand";
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+#app-bot .col-md-2 a{
+    font-size: 16px;
+    line-height: 27px;
+    color: #929292;
+    font-family: "Quicksand";
+    font-weight: 400;
+    display: block;
+}
+
+#app-bot .col-md-2 a:hover{
+    color: #0f7bff;
+    text-decoration: none;
+}
+
+#app-bot .fab{
+    padding-right: 10px;
+    color: #929292;
+}
+
+#app-bot .fab:hover{
+    padding-right: 10px;
+    color: #0f7bff;
+}
+
+/* footer --------------------------- */
+#footer{
+    background-color: #f5fcfd;
+    height: 100px;
+    position: relative;
+}
+
+#footer #foo-left{
+    float: left;
+    padding-top: 35px;
+    font-size: 16px;
+    line-height: 27px;
+    color: #929292;
+    font-family: "Quicksand";
+    font-weight: 400;
+}
+
+#footer #foo-right{
+    padding-top: 35px;
+    float: right;
+    font-size: 16px;
+    line-height: 27px;
+    font-family: "Quicksand";
+    font-weight: 400;
+    text-align: right;
+}
+
+#footer #foo-right a{
+    padding-left: 30px;
+    color: #929292;
+
+}
+
+#footer #foo-right a:hover{
+    color: #0f7bff;
+    text-decoration: none;
+}
+
+#footer #top-arrow{
+    position: absolute;
+    float: right;
+    top: 25px;
+    right: 150px;
+    width: 45px;
+    height: 45px;
+    background-color: #0f7bff;
+    text-align: center;
+    border-radius: 3px;
+}
+
+#footer #top-arrow img{
+    color: #ffffff;
+    padding-top: 11px;
+}
+
+/* ================================================
+    Login 
+   ================================================ */
+
+#sign-up #forgot{
     float: left;
 }
 
-#logo #sms{
-    font-weight: 300;
-    color: #b32e54;
-}
-
-#menu .wrapper{
-    margin: 10px 30px 10px 0;
+#sign-up #create{
     float: right;
 }
 
-#menu a{
-    font-size: 16px;
-    color: #404040;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    text-decoration: none;
-    padding: 10px 15px;
+#sign-up #log-in{
+    padding-top: 80px;
+    /* margin: auto; */
 }
 
-#menu span a{
-    background-color: #7f1a38;
-    color: #ffffff;
-    border-radius: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
-    transition: .2s ease-in;
-    -webkit-transition: .2s ease-in;
-    -o-transition: .2s ease-in;
+
+/* ================================================
+    Blog 
+   ================================================ */
+#blog {
+    margin-top: 120px;
 }
 
-#menu span a:hover{
-    text-decoration: none;
-    color: #7f1a38;
-    background-color: #ffffff;
-    transition: .2s ease-in;
-    -webkit-transition: .2s ease-in;
-    -o-transition: .2s ease-in;
-    border: 2px solid #7f1a38;
+/* blog post  ------------------------*/*/
+#blog .blog-grid{
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 33% 33% 33%;
 }
 
-/*==================================
-        Header
-====================================*/
-header{
-    background: linear-gradient(to bottom, #f2865f 0%, #c9392a 117%);
-}
-
-#hero h1{
-    font-size: 60px;
-    /* color: #ffffff; */
-    font-family: "Raleway";
-    font-weight: 275;
-    text-align: center;
-    padding-top: 130px;
-    /* padding-bottom: 20px; */
-}
-
-#hero h2{
-    font-size: 18px;
-    /* color: #ffffff; */
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 60px;
-}
-
-#hero h3{
-    font-size: 12px;
-    /* color: #ffffff; */
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 70px;
-
-}
-
-#hero form{
-    /* height: 45px; */
+#blog .blog-post .post-img{
+    /* width: 350px;
+    height: 200px; */
     width: 100%;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.6);
+    height: 200px;
 }
 
-#hero form input{
-    padding: 0 5px !important;
+/* blog infos ------------------------*/*/
+#blog .blog-post .post-content{
+    padding: 30px;
 }
 
-#hero form input[type=text]{
-    height: 45px;
-    font-size: 20px;
-    /* color: #ffffff; */
-    font-family: "Open Sans";
+#blog .blog-post .infos p{
+    display: inline;
+    padding: 5px 20px 0px 0px;
+}
+
+#blog .blog-post .infos img{
+    width: 20px;
+}
+
+/* infos text ------------------------*/
+#blog .blog-post .infos .post-title{
+    font-size: 18px;
+    line-height: 36px;
+    color: #333333;
+    font-family: "Quicksand";
+    font-weight: 500;
+}
+
+#blog .blog-post .infos h2{
+    font-size: 16px;
+    line-height: 27px;
+    color: #929292;
+    font-family: "Quicksand";
     font-weight: 400;
-    width: 35%;
-    /* padding-left: 15px; */
 }
 
-#hero form input[type=submit]{
-    background-color: #ae2c52;
-    letter-spacing: 2px;
-    color: #ffffff;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    height: 45px;
-    border: none;
-    width: 28%;
-    font-size: 20px;
-}
-
-
-/*==================================
-        Why us
-====================================*/
-
-#why{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    border-bottom: 1px solid #eaeaea;
-}
-
-#why img{
-    opacity: .7;
-}
-
-#why img:hover{
-    opacity: 1;
-}
-
-#why h1{
-    font-size: 24px;
-    color: #141414;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 15px;
-}
-
-#why p{
-    font-size: 14px;
-    line-height: 21px;
-    color: #444444;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    text-align: center;
-}
-
-
-
-/*==================================
-        Call to action
-====================================*/
-
-#cta{
-    padding-bottom: 100px;
-    padding-top: 100px;
-    background-color: #f9f9f9;
-}
-
-#cta .container h1{
-    font-size: 48px;
-    color: #404040;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-#cta p{
-    font-size: 15px;
-    line-height: 24px;
-    color: #404040;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    padding-bottom: 40px;
-}
-
-#cta .cta-btn a{
-    font-size: 20px;
-    letter-spacing: 2px;
-    text-decoration: none;
-    color: #7f1a38;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: 2px #7f1a38 solid;
-    padding: 15px;
-    border-radius: 20px;
-    transition: .2s ease-in;
-    -webkit-transition: .2s ease-in;
-    -o-transition: .2s ease-in;
-}
-
-#cta .cta-btn a:hover{
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #7f1a38;
-    -webkit-transition: .2s ease-in;
-    -o-transition: .2s ease-in;
-    transition: .2s ease-in;
-}
-
-/*==================================
-        Call to state
-====================================*/
-
-#cts {
-    background-color: #32383d;
-    color: rgb(255, 255, 255);
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-#cts h1{
-    font-size: 32px;
-    color: #fafafa;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    padding-left: 100px;
-    padding-right: 100px;
-    /* float: left; */
-}
-
-#cts .cts-btn{
-    padding-top: 7px;
-}
-
-#cts .cts-btn a{
-    /* float: right; */
-    font-size: 15px;
-    letter-spacing: 3px;
-    color: #ffffff;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: 2px #ffffff solid;
-    padding: 15px;
-    border-radius: 23px;
-    transition: .2s ease-in;
-    -webkit-transition: .2s ease-in;
-    -o-transition: .2s ease-in;
-}
-
-#cts .cts-btn a:hover{
-    color: #32383d;
-    background-color: #ffffff;
-    text-decoration: none;
-    transition: .3s ease-in;
-    -webkit-transition: .2s ease-in;
-    -o-transition: .2s ease-in;
-}
-
-/*==================================
-        Social media quotes
-====================================*/
-
-#social {
-    background-color: #09bbdb;
-    text-align: center;
-}
-
-#social i{
-    font-size: 32px;
-    color: #117486;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-#social .quote{
-    font-size: 20px;
-    line-height: 30px;
-    color: #ffffff;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300 !important;
-    font-style: italic;
-    text-align: center;
-}
-
-#social .quote span{
-    color: #117486;
-}
-
-#social .container{
-    padding-bottom: 50px;
-}
-
-/*==================================
-        Footer
-====================================*/
-footer p{
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-bottom: 0px;
+#blog .blog-post .infos .post-link{
+    font-size: 16px;
+    line-height: 27px;
+    color: #333333;
+    font-family: "Quicksand";
+    font-weight: 500;
 }
